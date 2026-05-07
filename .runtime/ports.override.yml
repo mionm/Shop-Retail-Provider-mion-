@@ -1,0 +1,27 @@
+services:
+  chain-server:
+    ports:
+      - "8009:8009"
+  catalog-retriever:
+    ports:
+      - "8010:8010"
+  memory-retriever:
+    ports:
+      - "8011:8011"
+  rails:
+    ports:
+      - "8012:8012"
+  etcd:
+    ports:
+      - "2379:2379"
+  minio:
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+  milvus:
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+  nginx:
+    ports:
+      - "3000:80"
